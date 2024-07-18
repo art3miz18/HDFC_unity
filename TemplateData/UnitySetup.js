@@ -68,9 +68,7 @@ script.onload = () => {
         .then((unityInstance) => {
             unityGame = unityInstance;
             loadingBar.style.display = "none";
-            fullscreenButton.onclick = () => {
-                canvasWrapper.requestFullscreen();
-            };
+            
         })
         .catch((message) => {
             alert(message);
